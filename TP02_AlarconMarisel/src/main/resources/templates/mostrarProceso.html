@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Resultado</title>
+</head>
+<body>
+	<form th:object="${procesoForm}" >
+		<label for="pfecha1">Fecha 1:</label><br>
+		<input type="text" id="pfecha1" th:field="*{fecha1}"><br>
+		<label for="pfecha2">Fecha 2:</label><br>
+		<input type="text" id="pfecha2" th:field="*{fecha2}"><br>
+		
+		<label th:text="*{mensaje1}" ></label><br>
+		<label th:text="*{mensaje2}" ></label><br>
+		
+	</form>
+</body>
+</html>

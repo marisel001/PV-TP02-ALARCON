@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>ALARCON - pto3</title>
+</head>
+<body>
+	<form th:Object = "${nuevaCadena}" th:action="@{/cadenaProcesada}" method="post">
+		<label for="fcadena">Cadena: </label> <br>
+		<input type="text" id="fcadena" th:field="*{cadena}"><br>
+		<input type="submit" value="ENVIAR">
+	</form>
+</body>
+</html>

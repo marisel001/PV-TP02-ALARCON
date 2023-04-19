@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>ALARCON - pto1</title>
+</head>
+<body>
+	<form th:object="${persona}" th:action="@{/guardarPersona}" method="post">
+		<label for="fnomb">Nombre: </label> <br>
+		<input type="text" id="fnomb" th:field="*{nombre}"><br>
+		<label for="fapell">Apellido: </label><br>
+		<input type="text" id="fapell" th:field="*{apellido}"><br>
+		<label for="ffechanac">Fecha de Nacimiento: </label><br>
+		<input type="date" id="ffechanac" th:field="*{fechaNac}"><br>
+		<input type="submit" value="ENVIAR">
+		
+	</form>
+</body>
+</html>

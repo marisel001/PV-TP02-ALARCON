@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Mostrar cadenas</title>
+</head>
+<body>
+	<form th:object="${nuevaCadena}" >
+
+		<label for="fcadena">Cadena: </label> 
+		<input type="text" id="fcadena" th:field="*{cadena}"><br>
+		<label th:text="*{mensaje1}" ></label><br>
+		<label for="fcadenaInv">Cadena invertida: </label> 
+		<input type="text" id="fcadenaInv" th:field="*{cadenaInvertida}"><br>
+		<label th:text="*{mensaje2}" ></label><br>
+		
+	</form>
+</body>
+</html>

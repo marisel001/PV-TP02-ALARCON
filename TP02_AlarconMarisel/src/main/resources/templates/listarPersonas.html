@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Listar datos</title>
+</head>
+<body>
+	<form th:object="${persona}" >
+		<label for="fnomb">Nombre: </label> <br>
+		<input type="text" id="fnomb" th:field="*{nombre}"><br>
+		<label for="fapell">Apellido: </label><br>
+		<input type="text" id="fapell" th:field="*{apellido}"><br>
+		<label for="ffechanac">Fecha de Nacimiento: </label><br>
+		<input type="text" id="ffechanac" th:field="*{fechaNac}"><br>
+		<label for="fedad">Edad: </label><br>
+		<input type="text" id="fedad" th:field="*{edad}"><br>
+		<label for="fsigno">Signo del zodiaco: </label><br>
+		<input type="text" id="fsigno" th:field="*{signoZodiaco}"><br>
+		<label for="festacion">Estacion: </label><br>
+		<input type="text" id="festacion" th:field="*{estacion}"><br>
+		
+	</form>
+</body>
+</html>
